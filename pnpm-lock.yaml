@@ -17,6 +17,9 @@ devDependencies:
   '@dashkite/genie':
     specifier: link:../genie
     version: link:../genie
+  '@dashkite/genie-coffee':
+    specifier: link:../genie-coffee
+    version: link:../genie-coffee
 
 packages:
 

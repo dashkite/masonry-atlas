@@ -13,4 +13,5 @@ atlas = ({ entries, map }) ->
       ($ "head").prepend map
     $.html()
 
+export default atlas
 export { atlas }

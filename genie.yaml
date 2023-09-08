@@ -1,21 +1,3 @@
-presets:
-  coffeescript:
-    targets:
-      node:
-        - preset: node
-          glob:
-            - '{src,test}/**/*.coffee'
-      browser:
-        - preset: browser
-          glob:
-            - src/**/*.coffee
-        - preset: browser
-          glob:
-            - test/client/**/*.coffee
-          options:
-            mode: debug
-        - preset: node
-          glob:
-            - test/**/*.coffee
-            - '!test/client/**/*.coffee'
-modules: {}
+coffee:
+  targets:
+    - node
