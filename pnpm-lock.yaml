@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@dashkite/atlas':
+    specifier: link:../atlas
+    version: link:../atlas
+
 devDependencies:
   '@dashkite/amen':
     specifier: ^0.2.0
