@@ -5,13 +5,13 @@ import * as Atlas from "@dashkite/atlas"
 atlas = ({ entries, map }) ->
   ( context ) -> 
     $ = cheerio.load context.input
-    map = await Atlas.generate entries, map
-    json = JSON.stringify map, null, 2
-    map = ( $ "<script type = 'importmap'>" ).text json
+    _map = await Atlas.generate entries, map
+    json = JSON.stringify _map, null, 2
+    script = ( $ "<script type = 'importmap'>" ).text json
     if ( target = $ "script[type='importmap']" ).length > 0
-      target.replaceWith map
+      target.replaceWith script
     else
-      ( $ "head" ).prepend map
+      ( $ "head" ).prepend script
     $.html()
 
 export default atlas
