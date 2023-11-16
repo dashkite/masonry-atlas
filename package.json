@@ -36,6 +36,7 @@
     "@dashkite/genie-coffee": "link:../genie-coffee"
   },
   "dependencies": {
-    "@dashkite/atlas": "link:../atlas"
+    "@dashkite/atlas": "link:../atlas",
+    "cheerio": "1.0.0-rc.12"
   }
 }
