@@ -39,7 +39,7 @@
     "@dashkite/genie-release": "^0.2.10"
   },
   "dependencies": {
-    "@dashkite/atlas": "link:../atlas",
+    "@dashkite/atlas": "0.7.0",
     "cheerio": "1.0.0-rc.12"
   }
 }
