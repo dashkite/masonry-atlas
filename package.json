@@ -1,6 +1,6 @@
 {
   "name": "@dashkite/masonry-atlas",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Masonry extension for generating Import Maps with Atlas",
   "keywords": [],
   "homepage": "https://github.com/dashkite/masonry-atlas#readme",
