@@ -30,8 +30,7 @@
     "release": "genie release"
   },
   "devDependencies": {
-
-    "@dashkite/amen": "0.5.0",
+    "@dashkite/amen": "0.9.30",
     "@dashkite/amen-console": "0.4.0",
     "@dashkite/assert": "0.3.0",
     "@dashkite/genie": "0.20.14",
@@ -42,6 +41,5 @@
   "dependencies": {
     "@dashkite/atlas": "link:../atlas",
     "cheerio": "1.1.2"
-
   }
 }
