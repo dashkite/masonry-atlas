@@ -75,18 +75,16 @@ do ->
       assert importMap.imports["pkg-a"]?, "Should contain pkg-a"
       assert importMap.imports["pkg-b"]?, "Should contain pkg-b"
       
-      # Generalized assertions for all HTTP URLs in the generated map
+      # Generalized assertions for all URLs in the generated map
       for key, value of importMap.imports
-        if value.startsWith "http"
-          url = new URL value
-          assert not url.pathname.includes("//"), "URL pathname should not contain double slashes: #{value}"
+        url = new URL value
+        assert not url.pathname.includes("//"), "URL pathname should not contain double slashes: #{value}"
           
       if importMap.scopes?
         for scope, mappings of importMap.scopes
           for key, value of mappings
-            if value.startsWith "http"
-              url = new URL value
-              assert not url.pathname.includes("//"), "URL pathname should not contain double slashes: #{value}"
+            url = new URL value
+            assert not url.pathname.includes("//"), "URL pathname should not contain double slashes: #{value}"
 
     test "injects import map into HTML for cerulean storage shell", ->
       # Point to the storage shell fixture in masonry-lambda
@@ -122,16 +120,14 @@ do ->
           
       assert hasPanama, "Should contain @dashkite/panama in imports"
       
-      # Generalized assertions for all HTTP URLs in the generated map
+      # Generalized assertions for all URLs in the generated map
       for key, value of importMap.imports
-        if value.startsWith "http"
-          url = new URL value
-          assert not url.pathname.includes("//"), "URL pathname should not contain double slashes: #{value}"
+        url = new URL value
+        assert not url.pathname.includes("//"), "URL pathname should not contain double slashes: #{value}"
           
       if importMap.scopes?
         for scope, mappings of importMap.scopes
           for key, value of mappings
-            if value.startsWith "http"
-              url = new URL value
-              assert not url.pathname.includes("//"), "URL pathname should not contain double slashes: #{value}"
+            url = new URL value
+            assert not url.pathname.includes("//"), "URL pathname should not contain double slashes: #{value}"
   ]
