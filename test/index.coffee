@@ -16,7 +16,6 @@ do ->
         entries: [ entryPath ]
         map: 
           cwd: fixtureDirectory
-          root: fixtureDirectory
           resolvers: browserKeys
           
       context = 
@@ -54,7 +53,6 @@ do ->
         entries: [ entryPath ]
         map: 
           cwd: fixtureDirectory
-          root: fixtureDirectory
           resolvers: browserKeys
           
       context = 
@@ -95,7 +93,6 @@ do ->
         entries: [ entryPath ]
         map: 
           cwd: fixtureDirectory
-          root: fixtureDirectory
           resolvers: browserKeys
           
       context = 
